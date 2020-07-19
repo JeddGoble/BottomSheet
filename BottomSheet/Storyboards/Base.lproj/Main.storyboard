@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vOD-oO-1FZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BottomSheet Demo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BottomSheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try it out!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Od-8n-FKT">
+                                <rect key="frame" x="163" y="118" width="88" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="KWh-OR-NDq"/>
+                                    <constraint firstAttribute="height" constant="27" id="ySw-Z9-AtB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dg-Q6-WER" customClass="RoundedButton" customModule="BottomSheet" customModuleProvider="target">
+                                <rect key="frame" x="157.5" y="175" width="99" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Bjq-O2-Wyy"/>
+                                </constraints>
+                                <state key="normal" title="Basic Example"/>
+                                <connections>
+                                    <action selector="onToggleTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ui5-t5-cWi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3m-4e-F87" customClass="RoundedButton" customModule="BottomSheet" customModuleProvider="target">
+                                <rect key="frame" x="144.5" y="245" width="125" height="30"/>
+                                <state key="normal" title="From Nib Example"/>
+                                <connections>
+                                    <action selector="onNibButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QVK-RO-19y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpm-k4-e0q" customClass="RoundedButton" customModule="BottomSheet" customModuleProvider="target">
+                                <rect key="frame" x="154" y="305" width="106" height="30"/>
+                                <state key="normal" title="Empty Example"/>
+                                <connections>
+                                    <action selector="emptyExampleTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fgp-Zh-Qhj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="O3m-4e-F87" firstAttribute="top" secondItem="8dg-Q6-WER" secondAttribute="bottom" constant="30" id="NNw-Nw-xvG"/>
+                            <constraint firstItem="8dg-Q6-WER" firstAttribute="top" secondItem="0Od-8n-FKT" secondAttribute="bottom" constant="30" id="QJ4-tI-cGq"/>
+                            <constraint firstItem="0Od-8n-FKT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qnf-Tb-7SM"/>
+                            <constraint firstItem="lpm-k4-e0q" firstAttribute="top" secondItem="O3m-4e-F87" secondAttribute="bottom" constant="30" id="kaF-Ci-oYS"/>
+                            <constraint firstItem="8dg-Q6-WER" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lLf-or-fjx"/>
+                            <constraint firstItem="O3m-4e-F87" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qi8-HQ-kaq"/>
+                            <constraint firstItem="lpm-k4-e0q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vcS-N4-Owx"/>
+                            <constraint firstItem="0Od-8n-FKT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="w1P-6I-uvA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="BottomSheet Demo" id="59b-bM-xyw"/>
+                    <connections>
+                        <outlet property="toggleButton" destination="8dg-Q6-WER" id="QMH-Kl-vm1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915.94202898550736" y="-3.3482142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hww-zg-t3k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vOD-oO-1FZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vhu-XW-Z1C">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0E5-4T-OBI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qw3-p9-1bU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.7971014492753632" y="-3.3482142857142856"/>
+        </scene>
+    </scenes>
+</document>

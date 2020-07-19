@@ -13,6 +13,15 @@
 		046711DB24C38188006E0781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046711D924C38188006E0781 /* Main.storyboard */; };
 		046711DD24C3818B006E0781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046711DC24C3818B006E0781 /* Assets.xcassets */; };
 		046711E024C3818B006E0781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046711DE24C3818B006E0781 /* LaunchScreen.storyboard */; };
+		046711EA24C3840C006E0781 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046711E924C3840C006E0781 /* RoundedButton.swift */; };
+		046711EC24C39EE5006E0781 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046711EB24C39EE5006E0781 /* BottomSheetView.swift */; };
+		046711EE24C39F66006E0781 /* BottomSheetToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046711ED24C39F66006E0781 /* BottomSheetToggleView.swift */; };
+		046711F024C39F76006E0781 /* BottomSheetContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046711EF24C39F76006E0781 /* BottomSheetContainerView.swift */; };
+		0496008A24C3A8E900C21DB8 /* BottomSheetTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496008924C3A8E900C21DB8 /* BottomSheetTopBarView.swift */; };
+		0496008C24C3A93300C21DB8 /* BottomSheetTopBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0496008B24C3A93300C21DB8 /* BottomSheetTopBarView.xib */; };
+		0496008E24C3C73D00C21DB8 /* BottomSheetModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496008D24C3C73D00C21DB8 /* BottomSheetModels.swift */; };
+		04E50E3324C4D5630074E4B0 /* BottomSheetExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E50E3224C4D5630074E4B0 /* BottomSheetExamples.swift */; };
+		04E50E3524C4D8900074E4B0 /* ExampleNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E50E3424C4D8900074E4B0 /* ExampleNib.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		046711DC24C3818B006E0781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046711DF24C3818B006E0781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046711E124C3818B006E0781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046711E924C3840C006E0781 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		046711EB24C39EE5006E0781 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		046711ED24C39F66006E0781 /* BottomSheetToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetToggleView.swift; sourceTree = "<group>"; };
+		046711EF24C39F76006E0781 /* BottomSheetContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetContainerView.swift; sourceTree = "<group>"; };
+		0496008924C3A8E900C21DB8 /* BottomSheetTopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTopBarView.swift; sourceTree = "<group>"; };
+		0496008B24C3A93300C21DB8 /* BottomSheetTopBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetTopBarView.xib; sourceTree = "<group>"; };
+		0496008D24C3C73D00C21DB8 /* BottomSheetModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetModels.swift; sourceTree = "<group>"; };
+		04E50E3224C4D5630074E4B0 /* BottomSheetExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetExamples.swift; sourceTree = "<group>"; };
+		04E50E3424C4D8900074E4B0 /* ExampleNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleNib.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,72 @@
 		046711D224C38188006E0781 /* BottomSheet */ = {
 			isa = PBXGroup;
 			children = (
-				046711D324C38188006E0781 /* AppDelegate.swift */,
-				046711D524C38188006E0781 /* SceneDelegate.swift */,
-				046711D724C38188006E0781 /* ViewController.swift */,
-				046711D924C38188006E0781 /* Main.storyboard */,
-				046711DC24C3818B006E0781 /* Assets.xcassets */,
-				046711DE24C3818B006E0781 /* LaunchScreen.storyboard */,
-				046711E124C3818B006E0781 /* Info.plist */,
+				046711F524C39FC6006E0781 /* View Controllers */,
+				046711F424C39FB3006E0781 /* UI Elements */,
+				046711F324C39FA3006E0781 /* Storyboards */,
+				046711F224C39F8C006E0781 /* Supporting */,
+				046711F124C39F79006E0781 /* Bottom Sheet Views */,
+				04E50E3124C4D5490074E4B0 /* Examples */,
 			);
 			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		046711F124C39F79006E0781 /* Bottom Sheet Views */ = {
+			isa = PBXGroup;
+			children = (
+				046711EB24C39EE5006E0781 /* BottomSheetView.swift */,
+				046711ED24C39F66006E0781 /* BottomSheetToggleView.swift */,
+				0496008924C3A8E900C21DB8 /* BottomSheetTopBarView.swift */,
+				0496008B24C3A93300C21DB8 /* BottomSheetTopBarView.xib */,
+				046711EF24C39F76006E0781 /* BottomSheetContainerView.swift */,
+				0496008D24C3C73D00C21DB8 /* BottomSheetModels.swift */,
+			);
+			path = "Bottom Sheet Views";
+			sourceTree = "<group>";
+		};
+		046711F224C39F8C006E0781 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				046711E124C3818B006E0781 /* Info.plist */,
+				046711DC24C3818B006E0781 /* Assets.xcassets */,
+				046711D324C38188006E0781 /* AppDelegate.swift */,
+				046711D524C38188006E0781 /* SceneDelegate.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		046711F324C39FA3006E0781 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				046711D924C38188006E0781 /* Main.storyboard */,
+				046711DE24C3818B006E0781 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		046711F424C39FB3006E0781 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				046711E924C3840C006E0781 /* RoundedButton.swift */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
+		046711F524C39FC6006E0781 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				046711D724C38188006E0781 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		04E50E3124C4D5490074E4B0 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				04E50E3224C4D5630074E4B0 /* BottomSheetExamples.swift */,
+				04E50E3424C4D8900074E4B0 /* ExampleNib.xib */,
+			);
+			path = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +203,8 @@
 				046711E024C3818B006E0781 /* LaunchScreen.storyboard in Resources */,
 				046711DD24C3818B006E0781 /* Assets.xcassets in Resources */,
 				046711DB24C38188006E0781 /* Main.storyboard in Resources */,
+				04E50E3524C4D8900074E4B0 /* ExampleNib.xib in Resources */,
+				0496008C24C3A93300C21DB8 /* BottomSheetTopBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +215,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0496008E24C3C73D00C21DB8 /* BottomSheetModels.swift in Sources */,
 				046711D824C38188006E0781 /* ViewController.swift in Sources */,
+				046711EC24C39EE5006E0781 /* BottomSheetView.swift in Sources */,
+				046711EE24C39F66006E0781 /* BottomSheetToggleView.swift in Sources */,
 				046711D424C38188006E0781 /* AppDelegate.swift in Sources */,
 				046711D624C38188006E0781 /* SceneDelegate.swift in Sources */,
+				046711F024C39F76006E0781 /* BottomSheetContainerView.swift in Sources */,
+				04E50E3324C4D5630074E4B0 /* BottomSheetExamples.swift in Sources */,
+				046711EA24C3840C006E0781 /* RoundedButton.swift in Sources */,
+				0496008A24C3A8E900C21DB8 /* BottomSheetTopBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T85QJN383J;
-				INFOPLIST_FILE = BottomSheet/Info.plist;
+				INFOPLIST_FILE = BottomSheet/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +388,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T85QJN383J;
-				INFOPLIST_FILE = BottomSheet/Info.plist;
+				INFOPLIST_FILE = BottomSheet/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
