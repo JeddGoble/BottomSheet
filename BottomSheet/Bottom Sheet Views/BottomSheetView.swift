@@ -8,15 +8,23 @@
 
 import UIKit
 
+/** Represents the state of the displayed sheet and content
+ # Can be one of three states:
+ - .dismissed: Has been swiped down or closed and is off screen entirely.
+ - .collapsed: The sheet occupies approximately the bottom half of the frame.
+ - .expanded: The sheet occupies the entire frame minus top padding.
+  */
 enum BottomSheetState {
     case dismissed, collapsed, expanded
 }
 
 protocol SheetViewDelegate: AnyObject {
     
+    /// Notifies the delegate that the transition to a new BottomSheetState has completed.
     func didTransition(toState state: BottomSheetState)
 }
 
+/// The main UIView subclass that developers should work with when creating a sheet. Be sure to configure your content to insert, and create a BottomSheetConfiguration prior to initializing a BottomSheetView.
 class BottomSheetView: UIView {
     
     weak var delegate: SheetViewDelegate?
@@ -33,6 +41,12 @@ class BottomSheetView: UIView {
     private var toggleView: BottomSheetToggleView?
     private var bgOverlayView = UIView()
     
+    /// Always create a BottomSheetConfiguration first, then use this init() to create a BottomSheetView
+    /// - Parameters:
+    ///   - frame: The full area that the sheet view could potentially cover. Usually view.frame if creating in a UIViewController.
+    ///   - contentView: A UIView or subclass of UIView that contains your content.
+    ///   - configuration: A BottomSheetConfiguration containing options for this Sheet.
+    /// - If you would like to be notified of state changes such as the Sheet being dismissed by the user, adopt the SheetViewDelegate and assign the delegate property.
     init(withFrame frame: CGRect, contentView: UIView?, configuration: BottomSheetConfiguration) {
         
         self.configuration = configuration
